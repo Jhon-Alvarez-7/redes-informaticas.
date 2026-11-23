@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa sobre topologías, dispositivos, conexiones, protocolos y seguridad de redes informáticas.">
+    <title>Fundamentos de Redes y Telecomunicaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+    <!-- encabezado Generalmente contiene, logotipo, nombre de la página, menú de navegación y Título principal.-->
+    <header>
+
+        <!-- portada con imagen de fondo -->
+        <div class="portada">
+            <h1>Fundamentos de las Redes Informáticas</h1>
+            <p>Conoce el mundo de las redes y las telecomunicaciones</p>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#topologias">Topologías</a></li>
+                <li><a href="#dispositivos">Dispositivos</a></li>
+                <li><a href="#conexiones">Conexiones</a></li>
+                <li><a href="#protocolos">Protocolos</a></li>
+                <li><a href="#seguridad">Seguridad</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+            </ul>
+        </nav>
+
+        <!-- boton para cambiar el tema -->
+        <button id="btnTema" type="button" aria-label="Cambiar el tema de la página">☀️ Cambiar tema</button>
+
+    </header>
+
+    <main>
+
+        <!-- Seccion de inicio -->
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+
+            <p>
+                Bienvenido a este espacio educativo dedicado al estudio de las redes informáticas y las telecomunicaciones.
+                Aquí conocerás los conceptos fundamentales que permiten la conexión y comunicación entre diferentes dispositivos.
+            </p>
+
+            <p>
+                Las redes informáticas forman parte de nuestra vida cotidiana. Gracias a ellas podemos navegar por Internet,
+                compartir archivos, realizar videollamadas y acceder a diferentes servicios digitales.            </p>
+
+            <h3>¿Qué son las redes informáticas?</h3>
+
+            <p>
+                Son conjuntos de dispositivos que estan conectados entre sí que  para intercambiar  información y compartir recursos,
+                como archivos mediante medios de comunicación o conexiones inalambricas.
+            </p>
+
+            <h3>¿Qué son las telecomunicaciones?</h3>
+
+            <p>
+                Son los medios y tecnologías que permiten transmitir
+                información a distancia mediante señales eléctricas,
+                ondas electromagnéticas o señales de luz.
+            </p>
+
+            <h3>Objetivo de esta página</h3>
+
+            <p>
+                Explicar los fundamentos de las redes informáticas,
+                identificar sus principales componentes y comprender
+                cómo se realiza la comunicación entre dispositivos.
+            </p>
+        </section>
+
+
+        <!-- SECCION TOPOLOGIAS -->
+        <section id="topologias">
+            <h2>Topologías de Red</h2>
+
+            <p>
+                Las topologías de red representan la forma física o lógica
+                en que se organizan y conectan los dispositivos dentro
+                de una red informática. Cada topología tiene características,
+                ventajas y limitaciones.
+            </p>
+
+            <h3>1. Topología Bus</h3>
+            <p>
+                Todos los dispositivos se conectan a un único cable
+                principal por donde se transmiten los datos.
+                Es una estructura sencilla, pero una falla en el cable
+                principal puede afectar la comunicación de toda la red.
+            </p>
+            <img src="Imagenes/Topologia bus.png" alt="Diagrama de topología bus">
+
+            <h3>2. Topología Estrella</h3>
+            <p>
+                Todos los dispositivos se conectan a un equipo central,
+                generalmente un switch. Es fácil de administrar y permite
+                detectar problemas en conexiones individuales.
+            </p>
+            <img src="Imagenes/estrella.png" alt="Diagrama de topología estrella">
+
+            <h3>3. Topología Anillo</h3>
+            <p>
+                Los dispositivos se conectan formando un circuito cerrado.
+                La información circula siguiendo el recorrido establecido
+                entre los equipos.
+            </p>
+            <img src="Imagenes/anillo.png" alt="Diagrama de topología anillo">
+
+            <h3>4. Topología Malla</h3>
+            <p>
+                Los dispositivos cuentan con múltiples conexiones,
+                permitiendo diferentes caminos para transmitir datos.
+                Ofrece varias rutas de comunicación entre los equipos.
+            </p>
+            <img src="Imagenes/malla.png" alt="Diagrama de topología malla">
+
+            <h3>5. Topología Árbol</h3>
+            <p>
+                Los dispositivos se organizan mediante una estructura
+                jerárquica, formando diferentes niveles y ramas.
+                Permite organizar redes de mayor tamaño.
+            </p>
+            <img src="Imagenes/arbol.png" alt="Diagrama de topología árbol">
+
+            <h3>6. Topología Híbrida</h3>
+            <p>
+                Combina dos o más tipos de topologías para construir
+                una red informática adaptada a diferentes necesidades.
+            </p>
+            <img src="Imagenes/hibrida.png" alt="Diagrama de topología híbrida">
+        </section>
+
+
+        <!-- SECCION DISPOSITIVOS -->
+        <section id="dispositivos">
+            <h2>Dispositivos de Red</h2>
+
+            <p>
+                Los dispositivos de red son equipos que permiten conectar,
+                organizar y comunicar diferentes elementos dentro de una
+                infraestructura informática.
+            </p>
+
+            <h3>1. Router (2911)</h3>
+            <img src="Imagenes/router.jpg" alt="Router Cisco">
+            <p>
+                Conecta diferentes redes y dirige los paquetes de datos
+                hacia su destino. También permite comunicar una red local
+                con otras redes, como Internet.
+            </p>
+
+            <h3>2. Switch </h3>
+            <img src="Imagenes/Switch (2960).jpg" alt="Switch Cisco">
+            <p>
+                Conecta diferentes dispositivos dentro de una red local
+                (LAN) y envía la información al equipo correspondiente
+                utilizando direcciones MAC.
+            </p>
+
+            <h3>3. PC </h3>
+            <img src="Imagenes/pc.jpj.webp" alt="Computadora PC-PT">
+            <p>
+                Es un dispositivo final que permite enviar y recibir
+                información, utilizar aplicaciones y comunicarse con
+                otros equipos de una red.
+            </p>
+
+            <h3>4. Laptop</h3>
+            <img src="Imagenes/laptop.jpg" alt="Computadora portátil">
+            <p>
+                Representa una computadora portátil que puede conectarse
+                a una red mediante una conexión cableada o inalámbrica.
+            </p>
+        </section>
+
+
+        <!-- SECCION CONEXIONES -->
+        <section id="conexiones">
+            <h2>Tipos de Conexiones</h2>
+
+            <p>
+                Las conexiones de red permiten comunicar diferentes
+                dispositivos y transmitir información. Se pueden clasificar
+                principalmente en conexiones cableadas e inalámbricas.
+            </p>
+
+            <h3>1. Cable Ethernet (UTP)</h3>
+            <img src="Imagenes/Cable Ethernet (UTP).png" alt="Cable Ethernet UTP">
+            <p>
+                Es un cable de cobre utilizado en redes locales.
+                Generalmente utiliza conectores RJ45 para conectar
+                computadoras, switches y routers.
+            </p>
+
+            <h3>2. Fibra Óptica</h3>
+            <img src="Imagenes/Fibra óptica.png" alt="Cable de fibra óptica">
+            <p>
+                Utiliza señales de luz para transmitir información
+                a gran velocidad y a largas distancias. Es muy utilizada
+                en las redes de telecomunicaciones.
+            </p>
+
+            <h3>3. Cable Coaxial</h3>
+            <img src="Imagenes/Cable coaxial.png" alt="Cable coaxial">
+            <p>
+                Transporta señales eléctricas mediante un conductor
+                central protegido por materiales aislantes y una malla
+                metálica. Se utiliza en televisión y otros sistemas
+                de comunicación.
+            </p>
+
+            <h3>4. Conexión Wi-Fi</h3>
+            <img src="Imagenes/wifi.jpg" alt="Conexión inalámbrica Wi-Fi">
+            <p>
+                Permite conectar dispositivos a una red mediante ondas
+                de radio, sin necesidad de utilizar cables físicos.
+            </p>
+
+            <h3>5. Cable Ethernet Cruzado</h3>
+            <img src="Imagenes/Cable Ethernet cruzado.jpg" alt="Cable Ethernet cruzado">
+            <p>
+                Es un tipo de cable Ethernet que utiliza un orden
+                diferente de conexiones en sus extremos. Se utilizaba
+                tradicionalmente para conectar directamente determinados
+                dispositivos similares.
+            </p>
+        </section>
+
+          <!-- seccion de protocolos-->
+        <section id="protocolos">
+            <h2>Protocolos de Red</h2>
+
+            <p>
+                Los protocolos de red son un conjunto de reglas
+                que permiten que los dispositivos intercambien
+                información de manera organizada. Definen cómo
+                se envían, reciben y procesan los datos.
+            </p>
+
+            <h3>1. TCP/IP</h3>
+            <p>
+                Es el conjunto de protocolos fundamental para la
+                comunicación en Internet. TCP permite una transmisión
+                confiable de datos, mientras que IP se encarga
+                del direccionamiento y envío de paquetes.
+            </p>
+
+            <h3>2. HTTP</h3>
+            <p>
+                Es un protocolo utilizado para transferir información
+                entre navegadores web y servidores. Permite acceder
+                al contenido de las páginas web.
+            </p>
+
+            <h3>3. HTTPS</h3>
+            <p>
+                Es una versión segura de HTTP que utiliza cifrado
+                para proteger la información intercambiada entre
+                el navegador y el servidor.
+            </p>
+
+            <h3>4. DNS</h3>
+            <p>
+                El Sistema de Nombres de Dominio permite traducir
+                nombres de sitios web, como ejemplo.com, en direcciones IP
+                que los dispositivos pueden utilizar.
+            </p>
+
+            <h3>5. DHCP</h3>
+            <p>
+                Es un protocolo que asigna automáticamente
+                configuraciones de red a los dispositivos,
+                como direcciones IP, máscaras de subred
+                y puertas de enlace.
+            </p>
+
+            <h3>6. FTP</h3>
+            <p>
+                Es un protocolo utilizado para transferir archivos
+                entre un cliente y un servidor. Su versión tradicional
+                no cifra la información.
+            </p>
+        </section>
+
+
+        <!-- SECCION SEGURIDAD -->
+        <section id="seguridad">
+            <h2>Seguridad en Redes</h2>
+
+            <p>
+                La seguridad en redes comprende las medidas y tecnologías
+                que permiten proteger los dispositivos, la información
+                y los servicios frente a accesos no autorizados
+                y diferentes amenazas digitales.
+            </p>
+
+            <h3>1. Firewall (Cortafuegos)</h3>
+            <p>
+                Es un sistema de seguridad que supervisa y controla
+                el tráfico de red según reglas establecidas.
+                Ayuda a bloquear conexiones no autorizadas.
+            </p>
+
+            <h3>2. Cifrado de Datos</h3>
+            <p>
+                Es un proceso que transforma la información
+                para que solamente las personas o sistemas autorizados
+                puedan comprenderla mediante los mecanismos adecuados.
+            </p>
+
+            <h3>3. Contraseñas Seguras</h3>
+            <p>
+                Son claves que ayudan a proteger las cuentas y los
+                dispositivos. Es recomendable utilizar contraseñas
+                largas, únicas y difíciles de adivinar.
+            </p>
+
+            <h3>4. Antivirus</h3>
+            <p>
+                Es un programa que ayuda a detectar, bloquear
+                y eliminar software malicioso que puede afectar
+                el funcionamiento de los dispositivos.
+            </p>
+
+            <h3>5. Actualizaciones</h3>
+            <p>
+                Mantener actualizados los sistemas y programas
+                permite corregir errores y solucionar vulnerabilidades
+                de seguridad.
+            </p>
+        </section>
+
+
+        <!-- SECCION APLICACIONES -->
+        <section id="aplicaciones">
+            <h2>Aplicaciones de las Redes</h2>
+
+            <p>
+                Las redes informáticas están presentes en nuestra vida
+                cotidiana y permiten compartir información, comunicarnos
+                y utilizar diferentes servicios tecnológicos.
+                Su aplicación es importante en diversos sectores.
+            </p>
+
+            <h3>1. Educación</h3>
+            <p>
+                Permiten acceder a clases virtuales, plataformas
+                educativas, bibliotecas digitales y recursos
+                de aprendizaje desde diferentes lugares.
+            </p>
+
+            <h3>2. Salud</h3>
+            <p>
+                Facilitan la comunicación entre hospitales,
+                el acceso a información médica digital
+                y el uso de sistemas de atención a distancia.
+            </p>
+
+            <h3>3. Empresas</h3>
+            <p>
+                Permiten compartir archivos, utilizar sistemas
+                de trabajo, administrar información y conectar
+                diferentes áreas de una organización.
+            </p>
+
+            <h3>4. Comunicación</h3>
+            <p>
+                Hacen posibles las videollamadas, los mensajes,
+                el correo electrónico y el intercambio de
+                información a través de Internet.
+            </p>
+
+            <h3>5. Hogares Inteligentes</h3>
+            <p>
+                Permiten conectar televisores, cámaras, celulares,
+                asistentes inteligentes y otros dispositivos
+                a una misma red doméstica.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>Fundamentos de las Redes Informáticas y las Telecomunicaciones</p>
+        <p>Proyecto educativo de redes y telecomunicaciones.</p>
+        <p>Jhon Alvarez.</p>
+    </footer>
+
+
+    <!-- Boton para volver al inicio-->
+    <button id="btnInicio" type="button" aria-label="Volver al inicio">↑</button>
+
+
+    <!-- CONECTAR JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
